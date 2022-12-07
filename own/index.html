@@ -15,9 +15,23 @@
             padding: 0
         }
 
+        .icons {
+            filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(86deg) brightness(100%) contrast(100%);
+            width: 18px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+        }
+
         .signature {
             padding: 15px;
-            width: 530px;
+            width: 100%;
+            max-width: 530px;
             background: url('img/gbg.png') no-repeat;
             background-size: 100% 100%;
             background-position: bottom bottom;
@@ -61,6 +75,12 @@
 
         }
 
+        .address-single {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+        }
+
         .info {
             display: flex;
             justify-content: space-around;
@@ -102,45 +122,74 @@
 
 <body>
 
-    <div class="signature" style="padding: 15px;
-    width: 530px;
+    <table>
+        <tr>
+            <td>
+                <div class="signature" style="padding: 15px;
+    width: 460px;
     background: url('https://ferdouszihad.github.io/fzpremiumhosting/own/img/gbg.png') no-repeat;
     background-size: 100% 100%;
     background-position: bottom bottom;">
 
-        <div class="row1">
+                    <div class="row1">
 
-            <img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/d1.jpg" alt="" width="200px" /> <br>
-            <h2>F M ZAHIDUL ISLAM</h2>
-            <h3>Front End Developer(REACT)</h3>
+                        <img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/d1.jpg" alt=""
+                            width="200px" /> <br>
+                        <h2>F M ZAHIDUL ISLAM</h2>
+                        <h3>Front End Developer(REACT)</h3>
 
-            <div class="row3">
-                <p class="loc"> <i class="fa-solid fa-location-dot"></i> : Lakshmipur-3700, Chittagong, Bangladesh</p>
-                <div class="info">
-                    <p>
-                        <i class="fa-solid fa-square-phone"></i> : +8801818857587
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-envelope fa-1x"></i> : f.zihad333@gmail.com
-                    </p>
-                </div>
-
-
-            </div>
-            <div class="row2">
-
-                <a href=""><img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/facebook.png" alt="" /></a>
-                <a href=""><img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/github.png" alt="" /></a>
-                <a href=""><img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/linkedin.png" alt="" /></a>
-
-            </div>
+                        <div class="row3">
+                            <p class="address-single"> <img src="../img/location-dot-solid.svg" alt="" class="icons"> :
+                                Lakshmipur-3700, Chittagong,
+                                Bangladesh</p>
+                            <div class="info">
+                                <a href="tel:01818857587">
+                                    <p class="address-single">
+                                        <img class="icons" src="../img/square-phone-solid.svg" alt="">
+                                        +8801818857587
+                                    </p>
+                                </a>
+                                <a href="mailto:f.zihad333@gmail.com">
+                                    <p class="address-single">
+                                        <img class="icons" src="../img/envelope-solid.svg" alt="">
+                                        f.zihad333@gmail.com
+                                    </p>
+                                </a>
 
 
+                            </div>
+
+
+                        </div>
+                        <div class="row2">
+
+                            <a href="https://www.facebook.com/ferdouszihad.09">
+                                <img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/facebook.png"
+                                    alt="" />
+                            </a>
+
+                            <a href="https://www.github.com/ferdouszihad/">
+                                <img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/github.png" alt="" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/ferdouszihad/">
+                                <img src="https://ferdouszihad.github.io/fzpremiumhosting/own/img/linkedin.png"
+                                    alt="" />
+                            </a>
+
+                        </div>
 
 
 
 
-        </div>
+
+
+                    </div>
+
+
+            </td>
+        </tr>
+    </table>
+
 
 
 
